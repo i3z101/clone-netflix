@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+:root{
+    --font: 'Open Sans', 'sans-serif';
+}
+
+.body{
+    background-color: black;
+}
+
+.body nav i{
+    color: white;
+}
+
+.body ul li{
+    color: white;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    place-items: center;
+    margin: 7% 0% 0% 7%;
+}
+
+.admin-name{
+    color: white; 
+    float: right; 
+    margin-right: 10%; 
+    margin-top: 0%;
+    padding: 10px; 
+    border-radius: 5px;
+}
+
+.admin-name a, .admin-name:active{
+    color: white;
+    text-decoration: none;
+}
+
+.content .movie{
+    position: relative;
+    margin-bottom: 25%;
+}
+
+.content .movie img{
+    --webkit-transition: all ease-in .5s;
+    --moz-transition: all ease-in .5s;
+    transition: all ease-in .5s;
+    transform-origin: top top;
+}
+
+.content .movie img:hover{
+    margin-left:10%;
+    transform: scale(2);
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+/* .content .movie img:hover + .movie{
+    border: 1px solid green;
+} */
+
+.content .movie .movie-detail{
+    display: none;
+    position: absolute;
+    top: 40%;
+    --webkit-transition: display ease-in .5s;
+    --moz-transition: display ease-in .5s;
+    transition: display ease-in .5s;
+}
+
+.content .movie .movie-detail, p, span{
+    color: white;
+    font-family: var(--font);
+    /* text-align: center; */
+}
+
+.content .movie .movie-detail h1{
+    font-size: 25px;
+    text-align: left;
+}
+
+
+.content .movie .movie-detail h1 a, .content .movie .movie-detail h1 a:active{
+    color:white;
+    text-decoration: none;
+    text-align: left;
+}
+
+.content .movie .rating-guide{
+    color: white;
+    top: 0%;
+}
+
+.content .cat-link{
+    position: absolute;
+    top: -30%;
+    left: 15%;
+}
+
+.content .cat-link a, .content .cat-link a:active{
+   color: white;
+   font-family: var(--font);
+   text-decoration: none;
+}
+
+.action a{
+    color: white;
+}
+
+
+@media only screen and (min-width:300px) and (max-width:600px){
+ .content{
+    grid-template-columns: auto;
+    /* padding-left: 70px;
+    padding-top: 30px;
+    column-gap: 90px; */
+    margin-left: 30%;
+ }
+ .content .movie{
+     margin-top: 55px;
+ }
+ .content .movie img{
+     width: 60%;
+ }
+ .content .movie .img-cat{
+    width: 120%;
+}
+ .content .movie img:hover{
+    z-index: 100;
+ }
+ .content .movie img:hover>.movie{
+    margin-top: 70px;
+}
+}
+

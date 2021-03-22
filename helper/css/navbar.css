@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+:root{
+    --font: 'Open Sans', 'sans-serif';
+}
+
+nav{
+    background-color:transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 4%;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+ul li{
+    margin-right: 20%;
+    font-size: 18px;
+    text-align: center;
+    padding: 7px;
+    font-family: var(--font);
+}
+
+    ul li a{
+        text-decoration: none;
+        background-color: red;
+        color: white;
+        border: 1px solid red;;
+        padding: 8px;
+        font-size: 17px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+.auth{
+    margin-left: -94%;
+}
+
+.drawer{
+    background-color: black; 
+    height:100vh;
+    width:0%;
+    position:absolute; 
+    top:0;
+    --webkit-transition: width ease-in-out .5s;
+    --moz-transition: width ease-in-out .5s;
+    transition: width ease-in-out .5s;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.show{
+    width: 12%;
+}
+
+.drawer .ul{
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.drawer .ul .li{
+    margin-top: 15px;
+}
+
+.drawer .ul .li .a{
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    width: 20px;
+}
+
+
+
+
+
+@media only screen and (min-width:300px) and (max-width:600px){
+    img{
+        width: 50%;
+        height: 50%;
+    }
+    nav{
+        margin: auto 8%;
+    }
+    .auth{
+        margin-left: -120%;
+    }
+    .show{
+        width: 35%;
+    }
+    .drawer img{
+        width: 100%;
+        height: 100%;
+    }
+    .drawer .ul .li .a{
+        font-size: 17px;
+    }
+ }

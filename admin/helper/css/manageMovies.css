@@ -1,0 +1,26 @@
+.name-email .cat{
+    color: #22a6b3;
+}
+
+.name-email .add-date{
+    color: #130f40;
+}
+
+.name-email .duration{
+    color: #f9ca24;
+    font-size: 13px;
+}
+
+.name-email .desc{
+    font-size: 13px;
+    color: #686de0;
+}
+
+.name-email .guide{
+    font-size: 13px;
+    color: #be2edd;
+}
+
+.edit-delete{
+    margin-left: 3%;
+}

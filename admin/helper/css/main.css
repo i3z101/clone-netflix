@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+:root{
+    --font: 'Open Sans', 'sans-serif';
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+label{
+    display: none;
+}
+
+
+.body-container{
+    background-color: #000000;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+.form-inner-container h2{
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: var(--font);
+    text-align: center;
+    margin-top: 13%;
+}   
+
+.form-inner-container h3{
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: var(--font);
+    text-align: center;
+}
+
+
+
+
+.inputs-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5% 7%;
+}
+
+.cat-movie span{
+   position: absolute;
+   right: 24%;
+}
+
+
+
+.inputs-container input{
+    width: 50%;
+    padding: 17px;
+    border: 1px solid white;
+    margin-bottom: 3%;
+    margin-left: 5%;
+    font-size: 16px;
+    outline: none;
+}
+
+
+.inputs-container textarea{
+    width: 50%;
+    padding: 17px;
+    border: 1px solid black;
+    margin-bottom: 3%;
+    margin-left: 5%;
+    font-size: 16px;
+    outline: none;
+    resize: none;
+}
+
+.inputs-container input:active{
+    outline: none;
+}
+
+
+
+.inputs-container button[type="submit"]{
+    width: 20%;
+    padding: 17px;
+    border: 1px solid white;
+    margin-bottom: 3%;
+    margin-left: 5%;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    --moz-transition: all ease-in .5s;
+    --webkit-transition: all ease-in .5s;
+    transition: all ease-in .2s;
+    background-color: #ff1414;
+    border:1px solid #ff1414;
+    border-radius: 0px;
+    color: white;
+    font-size: large;
+    font-family: var(--font);
+   
+}
+
+.inputs-container button[type="submit"]:hover{
+    background-color: #ff0000 ;
+}
+
+
+
+
+
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff5e57;
+    border: 1px solid tomato;
+    border-radius: 7px;
+    padding: 3px;
+    margin: -5% 15%;
+}
+
+.errord{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff5e57;
+    border: 1px solid tomato;
+    border-radius: 7px;
+    padding: 3px;
+    margin: 20% 15%;
+}
+
+
+
+.success{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2980b9;
+    border: 1px solid #2f94d8;
+    border-radius: 7px;
+    padding: 3px;
+    margin: 20% 15%;
+    color: white;
+}
+
+.error p{
+    font-size: 19px;
+}
+
+/*FROM USERS.PHP*/
+
+.container-form{
+    margin-top: 0;
+}
+
+.container-form span{
+    color: red;
+    margin-left: 3px;
+}
+
+.container-form form{
+    margin-left: 0%;
+}
+
+.container-form form>div>input{
+    border: 1px solid black;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.container-form form>div>input[type="date"]{
+    width: 49%;
+    margin-left: 5%;
+    outline:none;
+    border: 1px solid black;
+}
+
+.container-form form>div>select{
+    width: 52%;
+    margin-left: 5%;
+    outline:none;
+    border: 1px solid black;
+}
+
+.container-form button[type="submit"], .container-form button[type="submit"]:active{
+    margin-left: 42%;
+    padding: 10px;
+    margin-bottom: 2%;
+    width: 20%;
+    cursor: pointer;
+    --moz-transition: all ease-in .5s;
+    --webkit-transition: all ease-in .5s;
+    transition: all ease-in .2s;
+    background-color: #ff1414;
+    border:1px solid #ff1414;
+    border-radius: 0px;
+    color: white;
+    font-size: large;
+    font-family: var(--font);
+    outline: none;
+}
+
+/*END USERS.PHP*/
+
+
+/*FROM CATEGORIES.PHP*/
+
+.selectCat{
+    width: 50%;
+    padding: 17px;
+    border: 1px solid white;
+    margin-bottom: 3%;
+    margin-left: 5%;
+    font-size: 16px;
+    outline: none;
+}
+
+/*END CATEGORIES.PHP*/
+
+
+@media only screen and (min-width:300px) and (max-width:600px){
+    input, textarea, select{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        font-size: 16px;
+      }
+    label{
+        display: block;
+        margin-left: 5%;
+        font-family: var(--font);
+    }
+    .inputs-container textarea{
+        width: 80%;
+    }
+    .inputs-container{
+        flex-direction: column;
+        margin-top: 15%;
+    }
+
+    .inputs-container input{
+        width: 80%;
+        /* margin-bottom: 5%; */
+    }
+    .inputs-container button[type="submit"]{
+        width: 30%;
+        padding: 10px;
+    }
+
+    .container-form form>div{
+        margin-bottom: -10%;
+    }
+
+    .container-form form>div>input{
+        margin-bottom: 5%;
+    }
+
+    .container-form form>div>input[type="date"]{
+        width: 80%;
+    }
+ 
+    .container-form form>div>select{
+        width: 91%;
+        padding: 20px;
+    }
+    .container-form button[type="submit"], .container-form button[type="submit"]:active{
+      width: 50%;
+      margin-left: 22%;
+      margin-top: 13%;
+      margin-bottom: 5%;
+    }
+    .required{
+        display: none;
+    }
+}

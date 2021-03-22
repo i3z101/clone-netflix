@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+:root{
+    --font: 'Open Sans', 'sans-serif';
+}
+
+.auth-container{
+    background-color: #000000a5;
+    margin: 0 37% 0 37%;
+    height: 75vh;
+}
+
+.auth-container h3{
+    margin-left: 11%;
+    font-size: 25px;
+    color: white;
+    font-family: var(--font);
+    padding-top: 10%;
+}
+
+.auth-container form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.auth-container form input, .auth-container form input:active{
+    width: 70%;
+    padding: 20px;
+    background-color: #393937;
+    border: 1px solid #393937;
+    border-radius: 7px;
+    margin-bottom: 3%;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    margin-left: 2%;
+}
+
+.auth-container form button, .auth-container form button:active{
+    width: 70%;
+    padding: 10px;
+    color: white;
+    font-family: var(--font);
+    background-color: red;
+    font-size: 17px;
+    border: 1px solid red;
+    border-radius: 7px;
+    outline: none;
+    margin-top: 7%;
+    cursor: pointer;
+    margin-left: 2%;
+}
+
+.auth-container form label{
+    color: white;
+}
+
+.auth-container form .rem-help .rem{
+    display: flex;
+    align-items: center;
+}
+
+
+.auth-container form .rem-help .rem span{
+    margin-left: 3px;
+    width: 180px;
+}
+
+span{
+    color: #afafa5;
+}
+
+.auth-container form .rem-help .rem input[type="checkbox"]{
+    margin-right: -22px;
+}
+
+
+.auth-container form .rem-help{
+    display: grid;
+    grid-template-columns: auto auto;
+    place-items: center;
+    column-gap: 80px;
+    margin-top: 7%;
+}
+
+.second-section-auth{
+    margin-top: 10%;
+    padding: 10px;
+}
+
+.second-section-auth .new-to-net{
+    color: #afafa5;
+    font-size: 13px;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.second-section-auth .new-to-net a{
+    color: white;
+    font-size: 17px;
+}
+
+.second-section-auth .new-to-net a:hover{
+    text-decoration: underline;
+}
+
+.footer-section-auth{
+    background-color: black;
+    opacity: 0.8;
+    border-top: 1px solid #3d3d3d;
+    margin-top: 20%;
+}
+
+.footer-section-auth .grid-footer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 2px;
+    place-items: center;
+    margin: 0 10% 0 10%;
+}
+
+.footer-section-auth .call{
+    color: #757575;
+    font-size: 15px;
+    font-family: var(--font);
+    text-align: left;
+    margin-left: 17%;
+}
+
+.footer-section-auth .call a{
+    color: #757575;
+    text-decoration: none;
+}
+
+.footer-section-auth .call a:hover{
+    text-decoration: underline;
+}
+
+.footer-section-auth .list p{
+    color: #757575;
+    font-size: 13px;
+    font-family: var(--font);
+}
+
+
+
+@media only screen and (min-width:300px) and (max-width:600px){
+    .auth-container{
+        margin: 0 10% 0 10%;
+    }
+
+    .auth-container form .rem-help .rem{
+        /* overflow: hidden; */
+
+    }
+
+    .auth-container form .rem-help .rem span{
+        width: 40px;
+    }
+    
+    .auth-container form .rem-help .rem input[type="checkbox"]{
+        margin-right: 0px;
+        padding: 10px;
+    }
+    .auth-container form .rem-help .rem input[type="checkbox"]:checked{
+        background-color: red;
+        margin-right: 0px;
+    }
+    .second-section-auth .new-to-net{
+        color: #afafa5;
+        font-size: 13px;
+        text-align: center;
+        margin-left: 0%;
+    }
+    .footer-section-auth .grid-footer{
+        grid-template-columns: auto auto;
+    }
+
+}

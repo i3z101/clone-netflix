@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+:root{
+    --font: 'Open Sans', 'sans-serif';
+}
+
+.container{
+    background-image: url("../imgs/netflix-background-91.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.signup{
+    background-image: none;
+    background-color: white;
+}
+
+.inner-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading h1{
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    font-family: var(--font);
+}
+
+.heading h3{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-family: var(--font);
+}
+
+.caption h5{
+    text-align: center;
+    font-size: 20px;
+    font-family: var(--font);
+    color: white;
+}
+
+.inner-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 30vh;
+}
+
+.input-container input, .input-container input:active{
+    padding: 24.2px;
+    border: 1px solid #0000007d;
+    margin-right:0px;
+    outline: none;
+}
+
+
+
+
+.input-container button{
+    font-size: 22px;
+    color: white;
+    font-family: var(--font);
+    background-color: red;
+    border: 1px solid red;
+    padding: 17px;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.second-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    border-top: 6px solid #3d3d3d;
+}
+
+.second-section h1{
+    color: white;
+    font-family: var(--font);
+    font-size: 55px;
+    text-align: center;
+}
+
+.second-section h3{
+    color: white;
+    font-family: var(--font);
+    font-size: 20px;
+    text-align: center;
+}
+
+.caption1{
+    margin-left: 10%;
+}
+
+.caption2{
+    margin-right: 10%;
+}
+
+
+
+.second-section .img-section img{
+    width: 80%;
+    height: 80%;
+    margin-bottom: 10px;
+}
+
+.freq-section{
+    background-color: black;
+    border-top: 6px solid #3d3d3d;
+    /* height: 147vh; */
+    overflow: hidden;
+}
+
+.freq-section .freq{
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    font-family: var(--font);
+    margin: 3% 0 3% 0;
+}
+
+.ques{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #303030;
+    border: 1px solid #303030;
+    padding: 5px;
+    margin: 1% 25% 0px 25%;
+    cursor: pointer;
+}
+
+
+
+.ques p{
+    font-size: 23px;
+    font-family: var(--font);
+    margin-left: 5%;
+    color: white;
+    user-select: none;
+}
+
+.answ{
+    background-color: #303030;
+    border: 1px solid #303030;
+    padding: 5px;
+    margin: 0.5% 25% 0.5% 25%;
+    display: none;
+}
+
+.answ p{
+    font-size: 20px;
+    font-family: var(--font);
+    color: white;
+    text-align: left;
+    margin-left: 3%;
+}
+
+.ques .open{
+    color: white;
+    margin-right: 5%;
+    font-size: 23px;
+}
+
+.ques .close{
+    color: white;
+    margin-right: 5%;
+    font-size: 23px;
+}
+
+.ques .display{
+    display: block;
+}
+
+
+.ques .hide{
+    display: none;
+}
+
+
+.display{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+.footer-section{
+    background-color: black;
+    border-top: 6px solid #3d3d3d;
+    /* height: 147vh; */
+}
+
+.footer-section .grid-footer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 2px;
+    place-items: center;
+    margin: 0 10% 0 10%;
+}
+
+.footer-section .call{
+    color: #757575;
+    font-size: 15px;
+    font-family: var(--font);
+    margin-left: 16.3%;
+}
+
+.footer-section .call a{
+    color: #757575;
+    text-decoration: none;
+}
+
+.footer-section .call a:hover{
+    text-decoration: underline;
+}
+
+.footer-section .list p{
+    color: #757575;
+    font-size: 12px;
+    font-family: var(--font);
+}
+
+
+@media only screen and (min-width:300px) and (max-width:600px){
+    .input-container{
+        flex-direction: column;
+    }
+    .inner-container input{
+        width: 80%;
+        padding: 15px;
+        margin-bottom: 2%;
+    }
+    .input-container button{
+        padding: 12px;
+    }
+    .heading h1{
+        font-size: 40px;
+    }
+    .heading h3{
+        font-size: 17px;
+    }
+    .second-section{
+        flex-direction: column;
+    }
+    .second-section .caption1{
+        text-align: center;
+        margin-left: 0;
+        margin: 0 1% 0 1%;
+    }
+    .second-section .caption1 h1{
+        font-size: 40px;
+    }
+    .second-section .caption2{
+        text-align: center;
+        margin-right: 0%;
+    }
+    .second-section .caption2 h1{
+        font-size: 40px;
+    }
+    .second-section .caption2 h2{
+        font-size: 30px;
+    }
+    .second-section .img-section{
+        margin-left: 15%;
+    }
+    /* .freq-section{
+        height: 157vh;
+    } */
+    .freq-section .freq{
+        font-size: 18px;
+    }
+    .freq-section .form-inner-container input{
+        width: 80%;
+        padding: 15px;
+        margin-bottom: 2%;
+    }
+    .ques{
+        padding: 3px;
+        margin: 3% 10% 0px 10%;
+    }
+    .ques p{
+        font-size: 16px;
+    }
+    .answ{
+        padding: 5px;
+        margin: 0.5% 10% 0.5% 10%;
+    }
+    .answ p{
+        font-size: 14px;
+    }
+   
+    .footer-section .grid-footer{
+        grid-template-columns: auto auto;
+        margin: 0 5% 0 5%;
+       
+    }
+    .footer-section .call{
+        text-align: center;
+        margin-left: 0;
+    }
+    .footer-section .list p{
+        text-align: center;
+    }
+}
